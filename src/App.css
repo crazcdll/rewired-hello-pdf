@@ -1,22 +1,17 @@
-.App {
+.pdf-document {
+  margin: 30px;
+  border: 1px solid black;
+  padding: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+}
+
+.pdf-page {
+  border: 1px solid red;
+  box-shadow: 0 1px 5px rgba(255, 0, 0, 0.46);
+  margin-bottom: 30px;
+}
+
+.pdf-page-number {
+  margin-bottom: 30px;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
 }
