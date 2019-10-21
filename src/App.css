@@ -50,7 +50,7 @@ h1, p {
   width: 100%;
   position: absolute;
   border: none !important;
-  border-image: !important;
+  border-image: none !important;
 }
 
 .crosshairs::before {
