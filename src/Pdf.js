@@ -11,7 +11,8 @@ export default class Pdf extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      file: '',
+      file: 'https://1v1-fe-project-qiniu.xueba100.com//test/sample.pdf',
+      // file: 'https://1v1-fe-project-qiniu.xueba100.com//test/%E6%96%B0%E4%B8%96%E7%BA%AA%E9%AB%98%E4%B8%80%E4%B8%8B.pdf',
       numPages: null
     }
   }
@@ -46,7 +47,7 @@ export default class Pdf extends Component {
                     options={ options }
           >
             {
-              Array.from(new Array(numPages), (value, index) => (
+              Array.from([1], (value, index) => (
                 <>
                   <Page key={ `page_${ index + 1 }` } pageNumber={ index + 1 } className={ 'pdf-page' }/>
                   <div className={'pdf-page-number'}>第{ index + 1 }页</div>
