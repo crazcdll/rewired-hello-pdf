@@ -22,6 +22,9 @@ class App extends Component {
 
     return (
       <div className="App">
+        <div>
+          <a href='https://1v1-fe-project-qiniu.xueba100.com//test/sample.pdf' download>下载</a>
+        </div>
         <ScreenCapture onEndCapture={ this.handleScreenCapture }>
           { ({ onStartCapture }) => (
             <React.Fragment>

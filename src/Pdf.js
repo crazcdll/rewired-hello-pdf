@@ -49,7 +49,12 @@ export default class Pdf extends Component {
             {
               Array.from([1], (value, index) => (
                 <>
-                  <Page key={ `page_${ index + 1 }` } pageNumber={ index + 1 } className={ 'pdf-page' }/>
+                  <Page key={ `page_${ index + 1 }` }
+                        pageNumber={ index + 1 }
+                        className={ 'pdf-page' }
+                        scale={0.8}
+                        rotate={180}
+                  />
                   <div className={'pdf-page-number'}>第{ index + 1 }页</div>
                 </>
               ))
